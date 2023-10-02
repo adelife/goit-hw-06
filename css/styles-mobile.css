@@ -1063,13 +1063,16 @@ padding: 0 16px ;
         padding-top: 0;
         flex-basis: calc((100% - 24px) / 2);
     }
+        .faeture-li:not(:last-child){
+            margin-bottom: 0;
+        }
 
     .feature-title {
         text-align: left;
         color: #2e2f42;
         font-size: 36px;
         font-weight: 700;
-        line-height: 1.5px;
+        line-height: 1.11;
         letter-spacing: 0.72px;
         margin-bottom: 8px;
     }
