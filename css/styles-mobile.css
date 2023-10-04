@@ -117,8 +117,16 @@ button {
     background-size: cover;
     max-width: 767px;
 }
+@media only screen and (min-resolution: 192dpi) {
+    .banner {
+    background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero/Dark-bg_mob@2x.jpg);
+    }
+}
 .banner-title {
-    max-width: 496px;
+    max-width: 217px;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.07;
@@ -150,17 +158,14 @@ button {
 .feature {
    
         background-color: #FFF;
-        padding-top: 96px;
-        padding-bottom: 96px;
+        padding:96px 16px;
+        
         
     }
 .feature-icon{
     display: none;
 }
-.feature-list {
 
-    
-}
  .faeture-li:not(:last-child){
     margin-bottom: 72px;
  }
@@ -185,7 +190,7 @@ button {
 }
 .team {
     background-color: #F4F4FD;
-    padding: 96px 0;
+    padding: 96px 16px;
     text-align: center;
 }
 .team-title {
@@ -276,8 +281,7 @@ button {
 
 }
 .portfolio {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding: 96px 16px;
 }
 
 .portfolio-title {
@@ -357,7 +361,7 @@ button {
 }
 .footer-page {
     background-color: #2E2F42;
-    padding: 100px 0;
+    padding: 100px 16px;
 }
 .container-footer {
     display: block;
@@ -386,7 +390,7 @@ button {
     margin-bottom: 16px;
     justify-content: center;
     align-items: center;
-    margin-left:102px;
+    text-align: center;
 }
 
 .span-logo-footer {
@@ -401,6 +405,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 288px;
+    text-align: center;
 }
 
 .footer-title {
@@ -537,8 +542,9 @@ padding: 0 16px ;
     
 }
 .menu-container.is-open{
+    display: none;
     transform: translateX(0);
-    transition-duration: 250ms;
+    transition: all, 250ms;
     
 }
 
@@ -622,8 +628,7 @@ padding: 0 16px ;
 
 }
 .sosials-ul-footer{
-    gap: 16px;
-    justify-content: left;
+    gap: 40px;
 
 }
 /* backdrop window  */
@@ -969,7 +974,7 @@ padding: 0 16px ;
             line-height: 1.5;
             letter-spacing: 0.02em;
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            margin-bottom: 12px;
+            padding-bottom: 12px;
             }
         
     
@@ -995,11 +1000,24 @@ padding: 0 16px ;
     background-image:
         linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/hero/Dark-bg_tab@2x.jpg);
+        url(../images/hero/Dark-bg_tab.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 1439px;
+    padding-left:0;
+    padding-right: 0;
+
+
+
+}
+@media only screen and (min-resolution: 192dpi) {
+    .banner {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero/Dark-bg_tab@2x.jpg);
+    }
 }
 
 .banner-title {
@@ -1036,6 +1054,8 @@ padding: 0 16px ;
     .feature {
         padding-top:96px;
         padding-bottom: 96px;
+        padding-left: 16px;
+        padding-right: 16px;
         background-color: #FFF;
         
     }
@@ -1272,11 +1292,7 @@ padding: 0 16px ;
 
     .footer-page {
         background-color: #2E2F42;
-        padding: 100px 0;
-        padding-left: 16px;
-        padding-right: 16px;
-        
-        
+        padding: 100px 0;   
     }
 
     .container-footer {
@@ -1285,8 +1301,11 @@ padding: 0 16px ;
         flex-wrap: wrap;
         gap:24px;
         row-gap: 72px;
-        margin: 0;
+        margin: 0 auto;
         justify-content: flex-start;
+        padding-left: 16px;
+        padding-right: 16px;
+        
         
     }
 .container-logo{
@@ -2016,7 +2035,8 @@ padding: 0 16px ;
             gap: 40px;
     
         }
-    
+
+        
         .banner {
             margin: 0 auto;
             background-color: #2E2F42;
@@ -2024,8 +2044,7 @@ padding: 0 16px ;
             background-image:
                 linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url(../images/hero/banner-backround.jpg 1x,
-                    ../images/hero/people-office_desc@2x.jpg 2x);
+                url(../images/hero/banner-backround.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -2033,6 +2052,14 @@ padding: 0 16px ;
             /* убрать*/
     
         }
+    @media only screen and (min-resolution: 192dpi) {
+        .banner {
+            background-image:
+                    linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url(../images/hero/people-office_desc@2x.jpg);
+        }
+    }
     
         .banner-inner {
             /*baner div */
