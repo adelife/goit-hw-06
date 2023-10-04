@@ -874,7 +874,7 @@ padding: 0 16px ;
     color: #4d5ae5;
     text-decoration: underline;
 }
- 
+ /* Tablet */
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px; 
@@ -1908,6 +1908,8 @@ padding: 0 16px ;
 }
 /* backdrop window */
 
+
+/* desctop */
 @media screen and (min-width: 1158px){
     .container {
             max-width: 1158px;
