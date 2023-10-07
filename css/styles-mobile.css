@@ -366,7 +366,7 @@ button {
 }
 .footer-page {
     background-color: #2E2F42;
-    padding: 100px 16px;
+    
 }
 .container-footer {
     display: block;
@@ -374,6 +374,7 @@ flex-direction: column;
     width: 320px;
     margin: 0 auto;
     justify-content: center;
+    padding: 100px 16px;
 
 }
 
@@ -1672,6 +1673,7 @@ padding: 0 16px ;
 }
 /* backdrop window */
 .backdrop {
+    display: none;
     position: fixed;
     inset: 0;
     display: flex;
@@ -2542,7 +2544,6 @@ padding: 0 16px ;
         }
     
         .is-open {
-            display: none;
             opacity: 1;
             visibility: visible;
             pointer-events: auto;
